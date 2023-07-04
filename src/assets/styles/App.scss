@@ -167,3 +167,29 @@ nav {
     padding-top: 70px;
   }
 }
+
+.Footer {
+  background: $darkprimary;
+  padding: 37px 0;
+
+  p {
+    font-size: $fsize - 2;
+  }
+  a {
+    font-size: $fsize - 2;
+    color: $white;
+  }
+  ul {
+    li {
+      a {
+        padding: 10px 20px;
+      }
+    }
+  }
+  .footerSocial {
+    a {
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+}
