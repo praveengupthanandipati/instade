@@ -78,26 +78,24 @@ const PostsSlider = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
           }}
           navigation={true}
+          pageination={false}
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 5,
-              spaceBetween: 50,
+              spaceBetween: 20,
             },
           }}
           modules={[Autoplay, Pagination, Navigation]}
@@ -107,7 +105,7 @@ const PostsSlider = () => {
             <SwiperSlide key={item.id}>
               <div className="post-item">
                 <figure className="position-relative">
-                  <img src={item.imgname} alt="" />
+                  <img src={item.imgname} alt="" className="img-fluid w-100" />
                   <span className="post-resolution">{item.resolution}</span>
                   <div className="item-links">
                     <Link to="">

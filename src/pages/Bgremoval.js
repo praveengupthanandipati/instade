@@ -3,7 +3,9 @@ import React from "react";
 const Bgremoval = () => {
   return (
     <div>
-      <h1>This is BG Removal Page</h1>
+      <main className="login-screen">
+        <h1>Bg Removal Page</h1>
+      </main>
     </div>
   );
 };

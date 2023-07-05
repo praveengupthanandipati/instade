@@ -7,9 +7,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/styles/App.scss";
 import "./assets/styles/icomoon.css";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -3,7 +3,9 @@ import React from "react";
 const Signup = () => {
   return (
     <div>
-      <h1>This is Signup page</h1>
+      <main className="login-screen">
+        <h1>Sign up Screen</h1>
+      </main>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
   return (
     <div>
-      <div className={`fixed-top ${isSticked ? "sticked" : ""}`}>
+      <header className={`fixed-top ${isSticked ? "sticked" : ""}`}>
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container">
             <NavLink to="/" className="navbar-brand">
@@ -39,6 +39,7 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            
               <div className="navbar-nav ms-auto">
                 <NavLink to="/Bgremoval" className="nav-link">
                   BG Removal
@@ -50,10 +51,11 @@ const Header = () => {
                   <span>Signup</span>
                 </NavLink>
               </div>
+             
             </div>
           </div>
         </nav>
-      </div>
+      </header>
     </div>
   );
 };

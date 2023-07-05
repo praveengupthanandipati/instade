@@ -17,13 +17,16 @@ const Home = () => {
               <h1 className="title text-black">
                 AI Powered Instant Design Generator
               </h1>
-              <h5 className="h5 pb-4 text-black">
+              <h5 className="h5 pb-md-4 text-black">
                 You Can Generate Stunning Designs Instantly like a Magic
               </h5>
-              <NavLink to="" className="link-btn">
-                <span>Try instaDe</span>
-              </NavLink>
+              <div>
+                <NavLink to="" className="link-btn">
+                  <span>Try instaDe</span>
+                </NavLink>
+              </div>
             </article>
+
             <figure>
               <img src={BannerImage} alt="" className="img-fluid" />
             </figure>
@@ -49,10 +52,7 @@ const Home = () => {
             <PostsSlider />
           </div>
           <div className="designSkills position-relative">
-            <img
-              src={designSkills}
-              className="designSkillsImg position-absolute"
-            />
+            <img src={designSkills} className="designSkillsImg img-fluid" />
             <div className="container">
               <div className="row">
                 <div className="col-lg-7">
@@ -71,9 +71,11 @@ const Home = () => {
                         of the time it would take using templates or complex
                         design tools.
                       </p>
-                      <NavLink to="" className="link-btn">
-                        <span>Try instaDe</span>
-                      </NavLink>
+                      <p>
+                        <NavLink to="" className="link-btn">
+                          <span>Try instaDe</span>
+                        </NavLink>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -112,7 +114,7 @@ const Home = () => {
                 <div className="col-lg-6 align-self-center">
                   <div className="title-article">
                     <div>
-                      <h2 className="text-blak">
+                      <h2 className="text-blak py-3 py-md-0">
                         We Understand Your Brand, Messaging and Target Audience
                       </h2>
                       <p className="py-3">
@@ -124,9 +126,6 @@ const Home = () => {
                         variations of designs optimized for your message and
                         target audience every time.
                       </p>
-                      <NavLink to="" className="link-btn">
-                        <span>Try instaDe</span>
-                      </NavLink>
                     </div>
                   </div>
                 </div>
@@ -137,16 +136,18 @@ const Home = () => {
             <div className="container">
               <div className="title-article text-center pb-3">
                 <div>
-                  <h2 className="text-blak pb-3">
+                  <h2 className="text-blak pb-4">
                     Start Creating Beautiful Designs instantly
                   </h2>
-                  <NavLink to="" className="link-btn">
-                    <span>Sign up Now</span>
-                  </NavLink>
+                  <p>
+                    <NavLink to="" className="link-btn">
+                      <span>Sign up Now</span>
+                    </NavLink>
+                  </p>
                 </div>
-              </div>              
+              </div>
             </div>
-            <img src={startCreatingbanner} className="img-fluid w-100" alt=""/>
+            <img src={startCreatingbanner} className="img-fluid w-100" alt="" />
           </div>
         </div>
       </main>
