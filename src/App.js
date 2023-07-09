@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./includes/Header";
 import Home from "./pages/Home";
 import Bgremoval from "./pages/Bgremoval";
@@ -10,7 +10,7 @@ import Footer from "./includes/Footer";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Header />
         <Routes>
           <Route exact path="/" Component={Home} />
@@ -18,8 +18,8 @@ function App() {
           <Route path="/Login" Component={Login} />
           <Route path="/Signup" Component={Signup} />
         </Routes>
-        <Footer/>
-      </BrowserRouter>
+        <Footer />
+      </Router>
     </div>
   );
 }
