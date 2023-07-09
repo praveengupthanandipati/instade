@@ -1,37 +1,17 @@
 import React from "react";
-import BannerImage from "../assets/img/home-banner.png";
 import { NavLink } from "react-router-dom";
 import PostsSlider from "../components/PostsSlider";
+import HomeBanner from "../components/HomeBanner";
+import HomeMarquee from "../components/HomeMarquee";
 import designSkills from "../assets/img/design-skills-img.png";
-import Focusimg from "../assets/img/focusimg.png";
+import Focusimg from "../assets/img/focusgoals.svg";
 import Understandimg from "../assets/img/understandimg.png";
-import startCreatingbanner from "../assets/img/start-creatingbanner.png";
 
 const Home = () => {
   return (
     <div>
       <main>
-        <div className="Home-banner">
-          <div className="custom-container">
-            <article className="text-center">
-              <h1 className="title text-black">
-                AI Powered Instant Design Generator
-              </h1>
-              <h5 className="h5 pb-md-4 text-black">
-                You Can Generate Stunning Designs Instantly like a Magic
-              </h5>
-              <div>
-                <NavLink to="" className="link-btn">
-                  <span>Try instaDe</span>
-                </NavLink>
-              </div>
-            </article>
-
-            <figure>
-              <img src={BannerImage} alt="" className="img-fluid" />
-            </figure>
-          </div>
-        </div>
+        <HomeBanner />
         <div className="compatible-section">
           <div className="container">
             <div className="row justify-content-center">
@@ -51,31 +31,40 @@ const Home = () => {
           <div className="custom-container">
             <PostsSlider />
           </div>
-          <div className="designSkills position-relative">
-            <img src={designSkills} className="designSkillsImg img-fluid" />
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-7">
-                  <div className="title-article">
-                    <div>
-                      <h2 className="text-blak">
-                        Don’t have design skills or time?
-                      </h2>
-                      <p className="py-2">
-                        Don’t worry, say goodbye to spending hours creating
-                        designs with sample templates and complex design tools.
-                        With instaDe you can generate stunning designs in
-                        seconds, without needing any design skills. Just input
-                        your requirement and watch the AI generate a custom
-                        design that perfectly fits your needs, all in a fraction
-                        of the time it would take using templates or complex
-                        design tools.
-                      </p>
-                      <p>
-                        <NavLink to="" className="link-btn">
-                          <span>Try instaDe</span>
-                        </NavLink>
-                      </p>
+          <div className="designSkills">
+            <div className="container-fluid">
+              <div className="row  g-0">
+                <div className="col-lg-5 order-md-last">
+                  <img
+                    src={designSkills}
+                    className="designSkillsImg img-fluid w-100"
+                  />
+                </div>
+                <div className="col-lg-7 align-self-center">
+                  <div className="row justify-content-end">
+                    <div className="col-lg-8 align-self-center">
+                      <div className="title-article">
+                        <div>
+                          <h2 className="text-blak">
+                            Don’t have design skills or time?
+                          </h2>
+                          <p>
+                            Don’t worry, say goodbye to spending hours creating
+                            designs with sample templates and complex design
+                            tools. With instaDe you can generate stunning
+                            designs in seconds, without needing any design
+                            skills. Just input your requirement and watch the AI
+                            generate a custom design that perfectly fits your
+                            needs, all in a fraction of the time it would take
+                            using templates or complex design tools.
+                          </p>
+                          <p>
+                            <NavLink to="" className="link-btn">
+                              <span>Try instaDe</span>
+                            </NavLink>
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +136,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <img src={startCreatingbanner} className="img-fluid w-100" alt="" />
+            <HomeMarquee />
           </div>
         </div>
       </main>

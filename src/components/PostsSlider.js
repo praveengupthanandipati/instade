@@ -107,7 +107,7 @@ const PostsSlider = () => {
                 <figure className="position-relative">
                   <img src={item.imgname} alt="" className="img-fluid w-100" />
                   <span className="post-resolution">{item.resolution}</span>
-                  <div className="item-links">
+                  <div className="item-links d-none">
                     <Link to="">
                       <span class="icon-download icomoon"></span>
                     </Link>
