@@ -34,7 +34,7 @@ const Home = () => {
           <div className="designSkills">
             <div className="container-fluid">
               <div className="row  g-0">
-                <div className="col-lg-5 order-md-last">
+                <div className="col-lg-5 order-lg-last">
                   <img
                     src={designSkills}
                     className="designSkillsImg img-fluid w-100"

@@ -23,7 +23,7 @@ const Header = () => {
     <div>
       {/* <header className={`fixed-top ${isSticked ? "sticked" : ""}`}> */}
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-md navbar-light">
           <div className="container">
             <NavLink to="/" className="navbar-brand">
               <img src={Logo} alt="" />

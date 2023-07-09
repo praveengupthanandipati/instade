@@ -77,7 +77,7 @@ h6 {
   position: relative;
   display: inline-block;
 
-  @include max($sm) {
+  @include max($md) {
     padding: 10px 20px;
     font-size: $fsize - 1;
   }
@@ -103,6 +103,14 @@ h6 {
 
 header {
   padding: 15px 0;
+  @include max($md) {
+    background: $white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 5px 0;
+  }
   @include transition(all 0.5s ease);
   nav {
     .nav-link {
@@ -110,7 +118,7 @@ header {
       font-weight: 500;
       padding: 10px 20px !important;
 
-      @include max($sm) {
+      @include max($md) {
         background: $white;
         margin-bottom: 5px;
         border-radius: 25px;
@@ -118,6 +126,9 @@ header {
     }
     .signup-btn {
       @extend .link-btn;
+      @include max($md) {
+        width: 110px;
+      }
     }
     .navbar-brand {
       img {
@@ -130,13 +141,16 @@ header {
 
 main {
   margin-top: -96px;
+  @include max($md) {
+    margin-top: 0;
+  }
 }
 
 .Home-banner {
   background: linear-gradient(226deg, #ffe3e3 5.47%, #b8b4e5 100%);
   padding-top: 208px;
 
-  @include max($sm) {
+  @include max($md) {
     padding-top: 150px;
   }
 
@@ -149,7 +163,7 @@ main {
   .h5 {
     font-size: clamp(0.9rem, 1.5vw, 1.5rem);
 
-    @include max($sm) {
+    @include max($md) {
       line-height: 28px;
     }
   }
@@ -157,7 +171,7 @@ main {
   .HomebannerFigure {
     overflow: hidden;
     margin-top: -210px;
-    @include max($sm) {
+    @include max($lg) {
       margin-top: -20px;
     }
     .col-2 {
@@ -173,7 +187,7 @@ main {
     }
     figure {
       overflow: hidden;
-      @include max($sm) {
+      @include max($md) {
         margin-bottom: 2px;
       }
       img {
@@ -196,7 +210,7 @@ main {
 .compatible-section {
   padding: 95px 0 0 0;
 
-  @include max($sm) {
+  @include max($md) {
     padding: 20px 0 0 0;
   }
 }
@@ -276,7 +290,7 @@ main {
   min-height: 600px;
   margin-top: 105px;
 
-  @include max($sm) {
+  @include max($md) {
     margin-top: 25px;
   }
 
@@ -284,7 +298,7 @@ main {
     div {
       padding: 35% 0;
 
-      @include max($sm) {
+      @include max($md) {
         padding: 5%;
       }
     }
@@ -298,13 +312,13 @@ main {
 .focus-section {
   margin-bottom: 115px;
 
-  @include max($sm) {
+  @include max($md) {
     margin-bottom: 20px;
   }
   .row {
     padding-top: 70px;
 
-    @include max($sm) {
+    @include max($md) {
       padding-top: 30px;
     }
   }
@@ -314,6 +328,7 @@ main {
   background: $darkprimary;
   padding: 37px 0;
   margin-top: 15px;
+  position: relative;
 
   p {
     font-size: $fsize - 2;
@@ -323,7 +338,7 @@ main {
     color: $white;
   }
   ul {
-    @include max($sm) {
+    @include max($md) {
       justify-content: center;
       padding: 10px 0 !important;
     }
@@ -334,13 +349,35 @@ main {
     }
   }
   .footerSocial {
-    @include max($sm) {
+    @include max($md) {
       text-align: center;
       padding-top: 12px;
     }
     a {
       display: inline-block;
       padding: 0 10px;
+    }
+  }
+  .moveTop {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $white;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    line-height: 40px;
+    text-align: center;
+    @include transition(all 0.2s ease);
+    background: $primary;
+    z-index: 9999;
+    text-decoration: none;
+    transform: rotate(-90deg);
+
+    &:hover {
+      border-radius: 50%;
+    }
+    .icomoon {
+      color: $white;
     }
   }
 }
@@ -358,7 +395,7 @@ main {
       height: 270px;
       border-radius: 10px;
 
-      @include max($sm) {
+      @include max($md) {
         height: 120px;
         border-radius: 2px;
       }
