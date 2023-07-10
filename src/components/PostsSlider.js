@@ -85,7 +85,7 @@ const PostsSlider = () => {
           navigation={true}
           pageination={false}
           breakpoints={{
-            640: {
+            576: {
               slidesPerView: 2,
               spaceBetween: 10,
             },

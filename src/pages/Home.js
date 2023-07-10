@@ -34,15 +34,15 @@ const Home = () => {
           <div className="designSkills">
             <div className="container-fluid">
               <div className="row  g-0">
-                <div className="col-lg-5 order-lg-last">
+                <div className="col-md-5 order-md-last">
                   <img
                     src={designSkills}
                     className="designSkillsImg img-fluid w-100"
                   />
                 </div>
-                <div className="col-lg-7 align-self-center">
+                <div className=" col-md-7 align-self-lg-center">
                   <div className="row justify-content-end">
-                    <div className="col-lg-8 align-self-center">
+                    <div className="col-12 col-lg-8 align-self-center">
                       <div className="title-article">
                         <div>
                           <h2 className="text-blak">
@@ -74,10 +74,10 @@ const Home = () => {
           <div className="focus-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-md-6">
                   <img src={Focusimg} alt="" className="img-fluid" />
                 </div>
-                <div className="col-lg-6 align-self-center">
+                <div className="col-md-6 align-self-center">
                   <div className="title-article">
                     <div>
                       <h2 className="text-blak">Focus on Bigger Goals</h2>
@@ -97,10 +97,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="col-lg-6 order-lg-last">
+                <div className="col-md-6 order-lg-last">
                   <img src={Understandimg} alt="" className="img-fluid" />
                 </div>
-                <div className="col-lg-6 align-self-center">
+                <div className="col-md-6 align-self-center">
                   <div className="title-article">
                     <div>
                       <h2 className="text-blak py-3 py-md-0">

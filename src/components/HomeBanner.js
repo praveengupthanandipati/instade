@@ -39,7 +39,7 @@ const HomeBanner = () => {
           </article>
 
           <div className="HomebannerFigure">
-            <div className="row g-1 g-lg-3">
+            <div className="row g-1">
               <div className="col-2">
                 <figure>
                   <img src={poster01} className="img-fluid" alt="" />

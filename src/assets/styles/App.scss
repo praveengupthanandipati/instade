@@ -170,23 +170,27 @@ main {
 
   .HomebannerFigure {
     overflow: hidden;
-    margin-top: -210px;
-    @include max($lg) {
-      margin-top: -20px;
+    margin-top: -8%;
+
+    @include max($sm) {
+      margin-top: 0;
     }
+
     .col-2 {
       position: relative;
       &:nth-child(2),
       &:nth-child(5) {
-        transform: translateY(20%);
+        transform: translateY(12%);
       }
       &:nth-child(3),
       &:nth-child(4) {
-        transform: translateY(40%);
+        transform: translateY(24%);
       }
     }
     figure {
       overflow: hidden;
+      margin-bottom: 5px;
+      border-radius: 20px;
       @include max($md) {
         margin-bottom: 2px;
       }
@@ -208,11 +212,7 @@ main {
 }
 
 .compatible-section {
-  padding: 95px 0 0 0;
-
-  @include max($md) {
-    padding: 20px 0 0 0;
-  }
+  padding: 35px 0 0 0;
 }
 
 .PostSlider {
@@ -290,16 +290,17 @@ main {
   min-height: 600px;
   margin-top: 105px;
 
-  @include max($md) {
+  @include max($lg) {
     margin-top: 25px;
+    min-height: 420px;
   }
 
   .title-article {
     div {
       padding: 35% 0;
 
-      @include max($md) {
-        padding: 5%;
+      @include max($lg) {
+        padding: 5% 0;
       }
     }
   }
